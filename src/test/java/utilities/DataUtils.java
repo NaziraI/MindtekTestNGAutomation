@@ -11,7 +11,7 @@ public class DataUtils {
     public static String generateEmail() {
         Random random = new Random();
         int emailId = random.nextInt(100000);
-        String email = "abc" + emailId + "@gmail.com";
+        String email = "nzr" + emailId + "@gmail.com";
         return email;
     }
 
