@@ -82,7 +82,7 @@ public class StoreRegisterFunctionalityTests extends TestBase {
     }
 
     //Login Functionality
-    @Test(dependsOnMethods = {"test1"})
+    @Test(dependsOnMethods = {"test1"},groups = {"regression","smoke"})
     public void test2() throws IOException {
         StoreAppHomePage storeAppHomePage = new StoreAppHomePage();
         StoreAppLoginPage storeAppLoginPage = new StoreAppLoginPage();
