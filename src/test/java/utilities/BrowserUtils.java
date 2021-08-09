@@ -2,6 +2,7 @@ package utilities;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -22,7 +23,7 @@ public class BrowserUtils {
 
     }
 
-    //Tih method will take screenshot of browser
+    //This method will take screenshot of browser
     //Ex:
     //  .takeScreenshot("LoginTest");
     public static void takeScreenshot(String name) throws IOException {
@@ -51,5 +52,12 @@ public class BrowserUtils {
         WebDriver driver=Driver.getDriver();
         JavascriptExecutor js=((JavascriptExecutor) driver);
         js.executeScript("window.scrollBy(0,"+pixels+")");
+    }
+    // this method will hover over to element in browser-->   .hoverover();
+    //putting mouse on element
+
+    public static  void hoverOver(WebElement element){
+        Actions actions= new Actions(Driver.getDriver());
+        actions.moveToElement(element).perform();
     }
 }

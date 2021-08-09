@@ -3,13 +3,15 @@
     <test name ="Automating UI">
 <groups>
     <run>
-        <include name="smoke"></include>
+        <include name="regression"></include>
     </run>
 </groups>
         <classes>
             <class name ="tests.StoreTests"></class>
             <class name="tests.BlazeDemoTests"></class>
             <class name="tests.RedShelfTests"></class>
+            <class name="tests.StoreRegisterFunctionalityTests"></class>
+            <class name="tests.StoreAddCartTests"></class>
         </classes>
     </test>
 </suite>

@@ -21,4 +21,9 @@ public class DataUtils {
         return randomNum;
 
     }
+    //This method will remove dollar $ sign from String and will convert it to double-->remove$AndConvert($16.51)->16.51
+    public  static  double remove$AndConvert(String amount){
+        amount=amount.substring(1);
+        return Double.parseDouble(amount);
+    }
 }
