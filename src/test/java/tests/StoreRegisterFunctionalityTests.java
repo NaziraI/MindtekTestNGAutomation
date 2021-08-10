@@ -24,7 +24,7 @@ public class StoreRegisterFunctionalityTests extends TestBase {
 
     @DataProvider(name = "signUpDataProvider")
     public static Object[][] testData() {
-        Object[][] data = new Object[][]{// two dimentional array
+        Object[][] data = new Object[][]{// two dimensional array
                 {"John", "Doe", "123456789", DataUtils.generateNumber(30) + "", "1", "2021", "123 Clark street", "Chicago", "13", "12345", "21", "123456789"},
                 {"Kim", "Mi", "bchfjsk", "1", "12", "1980", "234 clark str", "New York", "32", "54321", "21", "987654321"}// we can add as muvh as we want
         };

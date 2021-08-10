@@ -1,5 +1,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="MindtekTestNGAutomation">
+    <parameter name="username" value="standard_user"></parameter><!--we can store here-->
+    <parameter name="password" value="secret_sauce"></parameter>
     <test name ="Automating UI">
 <groups>
     <run>
@@ -12,6 +14,7 @@
             <class name="tests.RedShelfTests"></class>
             <class name="tests.StoreRegisterFunctionalityTests"></class>
             <class name="tests.StoreAddCartTests"></class>
+            <class name="tests.SauceDemoTests"></class>
         </classes>
     </test>
 </suite>
